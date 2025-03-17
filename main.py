@@ -27,13 +27,13 @@ parser.add_argument('--num_of_fold', type=int, default=5)
 #training options
 parser.add_argument('--device', type=str, default='cuda')
 parser.add_argument('--data_load_device', type=str, default='cuda')
-parser.add_argument('--denoise',type=bool, default=True)
-parser.add_argument('--fisher_transform',type=bool, default=True)
+parser.add_argument('--denoise',type=bool, default=False)
+parser.add_argument('--fisher_transform',type=bool, default=False)
 parser.add_argument('--training_strategy', type=str, default='sd') #sd  cd  bd
 parser.add_argument('--predictor', type=str, default='BNT')
 parser.add_argument('--lr', type=float, default=1e-3)
 parser.add_argument('--batch_size', type=int, default=64)
-parser.add_argument('--num_of_epoch', type=int, default=1)
+parser.add_argument('--num_of_epoch', type=int, default=100)
 parser.add_argument('--random_seeds', type=list, default=[i for i in range(5)])
 
 #model hyperparameters  
@@ -49,7 +49,6 @@ parser.add_argument('--save_result', type=bool, default=True)
 parser.add_argument('--compare', type=bool, default=True)
 
 args = parser.parse_args() 
-
 
 
 Pretrain_data = Load_Data.PretrainData(args.data_name,args,device=args.data_load_device)
