@@ -114,7 +114,7 @@ class Evaluator():
 
 def compare(args):
     record = {'acc':[],'pre':[],'rec':[],'sen':[],'spe':[],'auc':[]}
-    for seed in args.random_seed:
+    for seed in args.random_seeds:
         record_file_name = f'data={args.data_name}_model={args.predictor}_seed={seed}.csv'
         subpath = f'./resultRecord/data={args.data_name}_model={args.predictor}_{args.spec}'
         path = os.path.join(subpath,record_file_name)
