@@ -5,7 +5,7 @@
 The ABIDE dataset is openly accessible to all users. You can download it by following the instructions on the [ABIDE website](http://preprocessed-connectomes-project.org/abide/download.html), or with the following code:
 
    -        from nilearn import datasets
-   -        datasets.fetch_abide_pcp(path,band_pass_filtering=True,global_signal_regression=True,quality_checked=True,derivatives='rois_cc200')
+                datasets.fetch_abide_pcp(path,band_pass_filtering=True,global_signal_regression=True,quality_checked=True,derivatives='rois_cc200')
 
 ### ADHD
 The ADHD dataset can be downloaded from the [ADHD website](http://preprocessed-connectomes-project.org/adhd200/download.html).
