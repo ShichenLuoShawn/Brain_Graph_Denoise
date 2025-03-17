@@ -12,11 +12,11 @@ The ADHD dataset can be downloaded from the [ADHD website](http://preprocessed-c
 
 ## Command
 python main.py --data_name 'ABIDE200' --denoise True --fisher_transform True --training_strategy 'sd'
-options:
-  --data_name   'ABIDE200', 'ADHD200'
-  --denoise   True, False
-  --fisher_transform   True, False
-  --training_strategy   'sd', 'bd', 'cd' (represent same dataset, both datasets, and cross dataset respectively)
+###options:
+-  --data_name   'ABIDE200', 'ADHD200'
+-  --denoise   True, False
+-  --fisher_transform   True, False
+-  --training_strategy   'sd', 'bd', 'cd' (represent same dataset, both datasets, and cross dataset respectively)
   
 ## Requirement
 - torch                   2.1.2+cu118
