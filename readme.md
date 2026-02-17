@@ -1,4 +1,4 @@
-# KPFBNC
+# BGR
 
 ## Datasets
 ### ABIDE
@@ -16,7 +16,6 @@ python main.py --data_name 'ABIDE200' --denoise True --fisher_transform True --t
 -  --data_name   'ABIDE200', 'ADHD200'
 -  --denoise   True, False
 -  --fisher_transform   True, False
--  --training_strategy   'sd', 'bd', 'cd' (represent same dataset, both datasets, and cross dataset respectively)
   
 ## Requirement
 - torch                   2.1.2+cu118
